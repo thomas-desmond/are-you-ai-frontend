@@ -11,6 +11,7 @@ import { Button } from "./ui/button";
 import { LoadingSpinner } from "./ui/loadingSpinner";
 import { ResultsDisplay } from "./ui/resultsDisplay";
 import { useRouter } from "next/navigation";
+import Image from 'next/image'
 
 export const runtime = "edge";
 
@@ -71,7 +72,7 @@ const InputForm: React.FC<InputFormProps> = (props) => {
   return (
     <>
       <div className="max-w-md rounded-lg shadow-xl">
-        <img
+        <Image
           src={props.imageUrl}
           alt="AI Generated Image"
           width={336}
